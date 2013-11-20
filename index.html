@@ -5,7 +5,7 @@
     <title>Rohaus</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body ng-app="rohausApp">
     <header>
       <section class="left">
         <a href="http://github.com/rohaus"><img src="styles/images/github.png" ></a>
@@ -21,10 +21,7 @@
       </ul>
     </header>
     <section class="wrapper">
-      <section class="content">
-        <h1>About Me</h1>
-        <hr>
-        <p>Coming soon...</p>
+      <section class="content" ng-view>
       </section>
     </section>
     <script>
@@ -35,7 +32,8 @@
       ga('create', 'UA-45802800-2', 'rohaus.us');
       ga('send', 'pageview');
     </script>
-    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
     <script src="client/app.js"></script>
+    <script src="client/controllers/main.js"></script>
   </body>
 </html>
