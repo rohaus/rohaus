@@ -1,12 +1,12 @@
-angular.module('rohausApp', [])
+angular.module('rohausApp', ['ngRoute'])
 .config(function($routeProvider){
   $routeProvider
   .when('/', {
-    templateUrl: '/templates/main.html',
+    templateUrl: 'client/templates/main.html',
     controller: 'MainCtrl'
   })
   .when('/resume', {
-    templateUrl: '/templates/resume.html',
+    templateUrl: 'client/templates/resume.html',
     controller: 'ResumeCtrl'
   })
   .otherwise({
