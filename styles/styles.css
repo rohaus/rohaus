@@ -43,7 +43,7 @@ header li, header p {
   padding: 10px;
   z-index: 10;
 }
-header li:hover, .left a:hover{
+header li:hover, .left a:hover, .active{
   background-color: #3A8579;
 }
 .logo, .logo:hover{
@@ -76,18 +76,15 @@ header li:hover, .left a:hover{
   padding-right: 10px;
 }
 
-article.align-left {
+section.content{
   overflow: auto;
+}
+
+.align-left {
   text-align: left;
 }
 
 /* Text Styles */
-.bold{
-  font-weight: bold;
-}
-.italics{
-  font-style: italic;
-}
 .underline{
   text-decoration: underline;
 }

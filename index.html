@@ -5,7 +5,7 @@
     <title>Rohaus</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body ng-app="rohausApp">
+  <body ng-app="rohausApp" ng-init="active = 'home'">
     <header>
       <section class="left">
         <a href="http://github.com/rohaus"><img src="styles/images/github.png" ></a>
@@ -14,8 +14,8 @@
       </section>
       <ul>
         <li class="logo">Ryan Roxas-Chua</li>
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/resume">Resume</a></li>
+        <li ng-class="{active: active === 'home'}" ng-click="active = 'home'"><a href="#/">Home</a></li>
+        <li ng-class="{active: active === 'resume'}" ng-click="active = 'resume'"><a href="#/resume">Resume</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="http://barter-app.herokuapp.com">Project: Barter</a></li>
         <li><a href="https://github.com/RebootJeff/phone-tag-phonegap">Project: Phone Tag</a></li>
